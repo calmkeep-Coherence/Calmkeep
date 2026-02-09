@@ -12,87 +12,82 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-  background-color: #0a1e2d;
-  color: #dbe7ef;
+  background-color: #081a26;
+  color: #d6e5f0;
   line-height: 1.6;
 }
 
 h1, h2 {
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 section {
-  max-width: 1000px;
+  max-width: 950px;
   margin: auto;
   padding: 70px 25px;
+}
+
+p {
+  color: #c2d6e5;
 }
 
 /* ---------- HEADER ---------- */
 
 header {
-  background: linear-gradient(
-    180deg,
-    #031622,
-    #07283c,
-    #0a1e2d
-  );
+  background: linear-gradient(180deg, #031622, #07283c, #081a26);
   padding: 120px 20px;
   text-align: center;
-  border-bottom: 1px solid #123a55;
+  border-bottom: 1px solid #10364d;
 }
 
 header h1 {
-  font-size: 52px;
-  color: #7dd3fc;
+  font-size: 54px;
+  color: #79d3ff;
   margin-bottom: 10px;
 }
 
 header p {
   font-size: 18px;
-  color: #9cc9e4;
+  color: #9ecde6;
+}
+
+/* ---------- SECTION BOX ---------- */
+
+.section-box {
+  background-color: #06141e;
+  border: 1px solid #10364d;
+  border-radius: 6px;
+  padding: 35px;
+  box-shadow: 0 0 30px rgba(0, 150, 255, 0.05);
+}
+
+.section-box h2 {
+  color: #79d3ff;
+  margin-bottom: 15px;
 }
 
 /* ---------- DIVIDER ---------- */
 
 .divider {
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #1b4d6b,
-    transparent
-  );
-  margin: 40px 0;
-}
-
-/* ---------- SECTION STYLE ---------- */
-
-.section-box {
-  background-color: #081926;
-  border: 1px solid #123a55;
-  border-radius: 6px;
-  padding: 35px;
-  box-shadow: 0 0 25px rgba(0, 150, 255, 0.05);
-}
-
-.section-box h2 {
-  color: #7dd3fc;
-  margin-bottom: 15px;
-}
-
-.section-box p {
-  color: #c7d8e5;
+  background: linear-gradient(90deg, transparent, #184f6e, transparent);
+  margin: 45px 0;
 }
 
 /* ---------- FOOTER ---------- */
 
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 50px;
   font-size: 14px;
-  color: #6c94ac;
-  border-top: 1px solid #123a55;
+  color: #6f9fb8;
+  border-top: 1px solid #10364d;
+}
+
+a {
+  color: #79d3ff;
+  text-decoration: none;
 }
 
 </style>
@@ -102,59 +97,120 @@ footer {
 
 <header>
   <h1>Calmkeep</h1>
-  <p>Runtime Containment for Stable Generative AI</p>
+  <p>Runtime Containment for Generative Model Coherence</p>
 </header>
 
 <section>
-  <div class="section-box">
-    <h2>Overview</h2>
-    <p>
-      Calmkeep is a model-agnostic middleware framework designed to stabilize generative AI
-      outputs during runtime. The system monitors symbolic rhythm, pacing, and contextual
-      continuity across token generation and applies bounded-coherence containment to
-      reduce contradiction drift and improve long-context reliability.
-    </p>
-  </div>
 
-  <div class="divider"></div>
+<div class="section-box">
+<h2>Why Generative Drift Persists</h2>
 
-  <div class="section-box">
-    <h2>Technical Concept</h2>
-    <p>
-      Calmkeep operates between user prompts and model output, providing real-time
-      containment and coherence stabilization without modifying model weights or requiring
-      retraining. The framework is designed to function across multiple AI architectures
-      through API-level orchestration.
-    </p>
-  </div>
+<p>
+Modern language models demonstrate remarkable reasoning capacity but frequently exhibit long-form instability across extended generation. Instruction decay, contradiction drift, and context reconstruction overhead remain persistent challenges even in advanced architectures.
+</p>
 
-  <div class="divider"></div>
+<p>
+Most reliability approaches attempt correction after instability has already emerged — through retrieval augmentation, alignment training, or post-hoc verification. These strategies treat coherence as an evaluative outcome rather than a continuously governed generative property.
+</p>
 
-  <div class="section-box">
-    <h2>Infrastructure Philosophy</h2>
-    <p>
-      Rather than correcting generative instability after output is produced, Calmkeep
-      introduces runtime containment principles that maintain bounded expressive variation
-      while preserving reasoning continuity. This shifts reliability from post-processing
-      to active generative stabilization.
-    </p>
-  </div>
+<p>
+Calmkeep explores an alternate hypothesis: that generative coherence may behave as a bounded temporal process that can be stabilized during inference itself.
+</p>
+</div>
 
-  <div class="divider"></div>
+<div class="divider"></div>
 
-  <div class="section-box">
-    <h2>Research Visibility</h2>
-    <p>
-      Calmkeep is currently being developed as a runtime reliability infrastructure for
-      generative AI systems. Research visibility, technical discussion, and evaluation
-      inquiries are welcome.
-    </p>
-  </div>
+<div class="section-box">
+<h2>Bounded-Coherence Runtime Containment</h2>
+
+<p>
+Calmkeep is a model-agnostic middleware framework that operates between prompt conditioning and model output. The system monitors symbolic rhythm across token generation, measuring cadence, density, and phase continuity across successive output windows.
+</p>
+
+<p>
+When generation patterns deviate from a bounded coherence envelope, Calmkeep applies adaptive containment modulation designed to preserve semantic continuity while preventing drift escalation.
+</p>
+
+<p>
+This approach treats coherence as a dynamic stability constraint rather than a post-generation correctness metric.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-box">
+<h2>Symbolic Rhythm As A Generative Control Dimension</h2>
+
+<p>
+Calmkeep evaluates generative motion using rhythmic signatures derived from:
+</p>
+
+<p>
+• Micro-cadence (token emission pacing)<br>
+• Symbolic density (conceptual compression per unit)<br>
+• Phase continuity (alignment of sequential reasoning flow)
+</p>
+
+<p>
+These signals form a composite generative trace that allows containment enforcement to occur during output formation rather than after contradiction emergence.
+</p>
+
+<p>
+The framework draws conceptual inspiration from animation continuity principles in which stability emerges through bounded elasticity between sequential frames. Calmkeep extends this idea to symbolic computation by treating tokens as temporal frames within a meaning-continuity waveform.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-box">
+<h2>Runtime Infrastructure Characteristics</h2>
+
+<p>
+Calmkeep is designed to integrate at the API orchestration layer and does not require model retraining or architectural modification. The containment engine operates as an inference-time stability governor compatible with multiple generative model adapters.
+</p>
+
+<p>
+Implementation details, envelope thresholds, weighting functions, and enforcement routines remain intentionally abstracted.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-box">
+<h2>Observed Behavioral Effects</h2>
+
+<p>
+Early internal evaluation suggests that runtime containment may reduce emergent contradiction cascades, preserve instruction persistence across extended sessions, and reduce prompt reconstruction overhead during long-form reasoning workflows.
+</p>
+
+<p>
+Formal benchmarking and third-party evaluation remain ongoing areas of interest.
+</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-box">
+<h2>Research Visibility</h2>
+
+<p>
+Calmkeep is currently under active development as an experimental runtime reliability infrastructure for generative AI systems.
+</p>
+
+<p>
+Technical discussion, research collaboration, and evaluation interest are welcome.
+</p>
+
+<p>
+Contact: <a href="mailto:research@calmkeep.ai">research@calmkeep.ai</a>
+</p>
+
+</div>
 
 </section>
 
 <footer>
-  Calmkeep — Generative Coherence Infrastructure
+Calmkeep — Experimental Generative Coherence Infrastructure
 </footer>
 
 </body>
