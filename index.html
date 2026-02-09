@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calmkeep</title>
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background-color: #0a1e2d;
+  color: #dbe7ef;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 70px 25px;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: linear-gradient(
+    180deg,
+    #031622,
+    #07283c,
+    #0a1e2d
+  );
+  padding: 120px 20px;
+  text-align: center;
+  border-bottom: 1px solid #123a55;
+}
+
+header h1 {
+  font-size: 52px;
+  color: #7dd3fc;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #9cc9e4;
+}
+
+/* ---------- DIVIDER ---------- */
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #1b4d6b,
+    transparent
+  );
+  margin: 40px 0;
+}
+
+/* ---------- SECTION STYLE ---------- */
+
+.section-box {
+  background-color: #081926;
+  border: 1px solid #123a55;
+  border-radius: 6px;
+  padding: 35px;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.05);
+}
+
+.section-box h2 {
+  color: #7dd3fc;
+  margin-bottom: 15px;
+}
+
+.section-box p {
+  color: #c7d8e5;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #6c94ac;
+  border-top: 1px solid #123a55;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Calmkeep</h1>
+  <p>Runtime Containment for Stable Generative AI</p>
+</header>
+
+<section>
+  <div class="section-box">
+    <h2>Overview</h2>
+    <p>
+      Calmkeep is a model-agnostic middleware framework designed to stabilize generative AI
+      outputs during runtime. The system monitors symbolic rhythm, pacing, and contextual
+      continuity across token generation and applies bounded-coherence containment to
+      reduce contradiction drift and improve long-context reliability.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-box">
+    <h2>Technical Concept</h2>
+    <p>
+      Calmkeep operates between user prompts and model output, providing real-time
+      containment and coherence stabilization without modifying model weights or requiring
+      retraining. The framework is designed to function across multiple AI architectures
+      through API-level orchestration.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-box">
+    <h2>Infrastructure Philosophy</h2>
+    <p>
+      Rather than correcting generative instability after output is produced, Calmkeep
+      introduces runtime containment principles that maintain bounded expressive variation
+      while preserving reasoning continuity. This shifts reliability from post-processing
+      to active generative stabilization.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section-box">
+    <h2>Research Visibility</h2>
+    <p>
+      Calmkeep is currently being developed as a runtime reliability infrastructure for
+      generative AI systems. Research visibility, technical discussion, and evaluation
+      inquiries are welcome.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  Calmkeep — Generative Coherence Infrastructure
+</footer>
+
+</body>
+</html>
